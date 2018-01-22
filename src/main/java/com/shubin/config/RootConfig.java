@@ -4,9 +4,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
-@Import(JpaConfig.class)
 @Configuration
-@ComponentScan("com.shubin.dao")
+@Import(JpaConfig.class)
+@ComponentScan(basePackages={"com.shubin.service"})
 public class RootConfig {
 
 }
